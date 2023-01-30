@@ -1,0 +1,8 @@
+{
+  "package_name": "teb_msgs",
+  "non_idl_tuples": [
+    "/home/pi/amr_ws/src/teb_local_planner/teb_msgs:msg/FeedbackMsg.msg",
+    "/home/pi/amr_ws/src/teb_local_planner/teb_msgs:msg/TrajectoryMsg.msg",
+    "/home/pi/amr_ws/src/teb_local_planner/teb_msgs:msg/TrajectoryPointMsg.msg"
+  ]
+}

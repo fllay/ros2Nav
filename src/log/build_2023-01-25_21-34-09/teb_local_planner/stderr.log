@@ -1,0 +1,19 @@
+In file included from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_loader_imp.hpp:57[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp:334[m[K,
+                 from [01m[K/home/pi/amr_ws/src/teb_local_planner/teb_local_planner/include/teb_local_planner/teb_local_planner_ros.h:42[m[K,
+                 from [01m[K/home/pi/amr_ws/src/teb_local_planner/teb_local_planner/src/teb_local_planner_ros.cpp:39[m[K:
+[01m[K/home/pi/amr_ws/src/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:[m[K In member function ‘[01m[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)[m[K’:
+[01m[K/home/pi/amr_ws/src/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+  197 |         RCLCPP_DEBUG(nh_->get_logger(), [01;35m[K"costmap_converter"[m[K, "Spinning up a thread for the CostmapToPolygons plugin");
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pi/amr_ws/src/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:[m[K In member function ‘[01m[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)[m[K’:
+[01m[K/home/pi/amr_ws/src/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kconst string[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  313 |       RCLCPP_INFO(getLogger(), [01;35m[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."[m[K, plugin_name);
+      |                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/pi/amr_ws/src/teb_local_planner/teb_local_planner/include/teb_local_planner/teb_local_planner_ros.h:68[m[K,
+                 from [01m[K/home/pi/amr_ws/src/teb_local_planner/teb_local_planner/src/teb_local_planner_ros.cpp:39[m[K:
+[01m[K/home/pi/amr_ws/src/install/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles [01;36m[K%s[m[K loaded.", plugin_name);
+      |                                                                                                                      [01;36m[K~^[m[K
+      |                                                                                                                       [01;36m[K|[m[K
+      |                                                                                                                       [01;36m[Kchar*[m[K

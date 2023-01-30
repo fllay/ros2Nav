@@ -1,0 +1,25 @@
+// -*- jsonc -*-
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/opt/ros/galactic/include/**",
+        "/opt/ros/noetic/include/**",
+        "/usr/include/**"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "/opt/ros/galactic/include",
+          "/opt/ros/noetic/include",
+          "/usr/include"
+        ]
+      },
+      "defines": ["ASIO_STANDALONE"],
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

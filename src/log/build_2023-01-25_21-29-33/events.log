@@ -1,0 +1,17 @@
+[0.000000] (-) TimerEvent: {}
+[0.002064] (-) JobUnselected: {'identifier': 'amr_control'}
+[0.002773] (-) JobUnselected: {'identifier': 'amr_interface'}
+[0.002894] (-) JobUnselected: {'identifier': 'foxglove_bridge'}
+[0.002986] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.005240] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.005464] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.006326] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.006466] (-) JobUnselected: {'identifier': 'rplidar_ros2'}
+[0.006550] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.006631] (-) JobUnselected: {'identifier': 'teb_msgs'}
+[0.006713] (-) JobUnselected: {'identifier': 'witmotion_ros'}
+[0.006798] (teb_local_planner) JobQueued: {'identifier': 'teb_local_planner', 'dependencies': OrderedDict([('teb_msgs', '/home/pi/amr_ws/src/install/teb_msgs')])}
+[0.006903] (teb_local_planner) JobStarted: {'identifier': 'teb_local_planner'}
+[0.098918] (-) TimerEvent: {}
+[0.163132] (teb_local_planner) JobEnded: {'identifier': 'teb_local_planner', 'rc': 1}
+[0.177082] (-) EventReactorShutdown: {}

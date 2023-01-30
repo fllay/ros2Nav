@@ -1,0 +1,1449 @@
+[0.000000] (-) TimerEvent: {}
+[0.000783] (-) JobUnselected: {'identifier': 'amr_control'}
+[0.000987] (-) JobUnselected: {'identifier': 'amr_interface'}
+[0.001125] (-) JobUnselected: {'identifier': 'costmap_converter'}
+[0.001220] (-) JobUnselected: {'identifier': 'foxglove_bridge'}
+[0.001320] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.001404] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.001488] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.001621] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.001723] (-) JobUnselected: {'identifier': 'rplidar_ros2'}
+[0.001808] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.001900] (-) JobUnselected: {'identifier': 'witmotion_ros'}
+[0.002037] (costmap_converter_msgs) JobQueued: {'identifier': 'costmap_converter_msgs', 'dependencies': OrderedDict()}
+[0.004428] (teb_msgs) JobQueued: {'identifier': 'teb_msgs', 'dependencies': OrderedDict([('costmap_converter_msgs', '/home/pi/amr_ws/src/install/costmap_converter_msgs')])}
+[0.004664] (teb_local_planner) JobQueued: {'identifier': 'teb_local_planner', 'dependencies': OrderedDict([('costmap_converter_msgs', '/home/pi/amr_ws/src/install/costmap_converter_msgs'), ('costmap_converter', '/home/pi/amr_ws/src/install/costmap_converter'), ('teb_msgs', '/home/pi/amr_ws/src/install/teb_msgs')])}
+[0.005000] (costmap_converter_msgs) JobStarted: {'identifier': 'costmap_converter_msgs'}
+[0.069633] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'cmake'}
+[0.070535] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/amr_ws/src/costmap_converter/costmap_converter_msgs', '-DCMAKE_INSTALL_PREFIX=/home/pi/amr_ws/src/install/costmap_converter_msgs'], 'cwd': '/home/pi/amr_ws/src/build/costmap_converter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.68.12 54096 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/amr_ws/install/witmotion_ros/lib:/home/pi/amr_ws/install/micro_ros_agent/lib:/home/pi/amr_ws/install/micro_ros_msgs/lib:/home/pi/amr_ws/install/foxglove_bridge/lib:/home/pi/amr_ws/install/amr_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/amr_ws/src/teb_local_planner'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('ROS_LOG_DIR', '/home/pi/nulldir'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/amr_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_control:/home/pi/amr_ws/install/amr_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/pi/amr_ws/src/build/costmap_converter_msgs'), ('SSH_CONNECTION', '192.168.68.12 54096 192.168.68.24 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/amr_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/amr_control/lib/python3.10/site-packages:/home/pi/amr_ws/install/amr_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_interface:/home/pi/amr_ws/install/amr_control:/opt/ros/humble')]), 'shell': False}
+[0.093048] (-) TimerEvent: {}
+[0.193740] (-) TimerEvent: {}
+[0.294556] (-) TimerEvent: {}
+[0.395589] (-) TimerEvent: {}
+[0.407584] (costmap_converter_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.496023] (-) TimerEvent: {}
+[0.596808] (-) TimerEvent: {}
+[0.697587] (-) TimerEvent: {}
+[0.727159] (costmap_converter_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.772349] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.797853] (-) TimerEvent: {}
+[0.898941] (-) TimerEvent: {}
+[1.001007] (-) TimerEvent: {}
+[1.101801] (-) TimerEvent: {}
+[1.191315] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.201973] (-) TimerEvent: {}
+[1.218150] (costmap_converter_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.219186] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.220805] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.233864] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.302143] (-) TimerEvent: {}
+[1.403610] (-) TimerEvent: {}
+[1.504411] (-) TimerEvent: {}
+[1.605150] (-) TimerEvent: {}
+[1.649652] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.679817] (costmap_converter_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.680849] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.682486] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.705295] (-) TimerEvent: {}
+[1.724840] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.805483] (-) TimerEvent: {}
+[1.906171] (-) TimerEvent: {}
+[2.006868] (-) TimerEvent: {}
+[2.107698] (-) TimerEvent: {}
+[2.208572] (-) TimerEvent: {}
+[2.309636] (-) TimerEvent: {}
+[2.410298] (-) TimerEvent: {}
+[2.510982] (-) TimerEvent: {}
+[2.611666] (-) TimerEvent: {}
+[2.712385] (-) TimerEvent: {}
+[2.745722] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[2.812618] (-) TimerEvent: {}
+[2.913279] (-) TimerEvent: {}
+[3.013940] (-) TimerEvent: {}
+[3.114585] (-) TimerEvent: {}
+[3.215735] (-) TimerEvent: {}
+[3.316411] (-) TimerEvent: {}
+[3.417708] (-) TimerEvent: {}
+[3.518481] (-) TimerEvent: {}
+[3.619138] (-) TimerEvent: {}
+[3.623948] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[3.719336] (-) TimerEvent: {}
+[3.820127] (-) TimerEvent: {}
+[3.920777] (-) TimerEvent: {}
+[4.021590] (-) TimerEvent: {}
+[4.081250] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.121762] (-) TimerEvent: {}
+[4.158960] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.221977] (-) TimerEvent: {}
+[4.254804] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.322185] (-) TimerEvent: {}
+[4.373318] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.422447] (-) TimerEvent: {}
+[4.523188] (-) TimerEvent: {}
+[4.546799] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.623357] (-) TimerEvent: {}
+[4.723974] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.724533] (-) TimerEvent: {}
+[4.825082] (-) TimerEvent: {}
+[4.925776] (-) TimerEvent: {}
+[5.026481] (-) TimerEvent: {}
+[5.127163] (-) TimerEvent: {}
+[5.227844] (-) TimerEvent: {}
+[5.254147] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[5.328093] (-) TimerEvent: {}
+[5.428813] (-) TimerEvent: {}
+[5.529718] (-) TimerEvent: {}
+[5.630772] (-) TimerEvent: {}
+[5.731455] (-) TimerEvent: {}
+[5.832137] (-) TimerEvent: {}
+[5.932947] (-) TimerEvent: {}
+[6.033753] (-) TimerEvent: {}
+[6.134765] (-) TimerEvent: {}
+[6.235573] (-) TimerEvent: {}
+[6.336287] (-) TimerEvent: {}
+[6.436975] (-) TimerEvent: {}
+[6.537645] (-) TimerEvent: {}
+[6.639281] (-) TimerEvent: {}
+[6.742238] (-) TimerEvent: {}
+[6.842974] (-) TimerEvent: {}
+[6.944261] (-) TimerEvent: {}
+[7.045379] (-) TimerEvent: {}
+[7.053800] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[7.145564] (-) TimerEvent: {}
+[7.246295] (-) TimerEvent: {}
+[7.347063] (-) TimerEvent: {}
+[7.447974] (-) TimerEvent: {}
+[7.548710] (-) TimerEvent: {}
+[7.649371] (-) TimerEvent: {}
+[7.750149] (-) TimerEvent: {}
+[7.850849] (-) TimerEvent: {}
+[7.951598] (-) TimerEvent: {}
+[8.052458] (-) TimerEvent: {}
+[8.153123] (-) TimerEvent: {}
+[8.253752] (-) TimerEvent: {}
+[8.354581] (-) TimerEvent: {}
+[8.455609] (-) TimerEvent: {}
+[8.556281] (-) TimerEvent: {}
+[8.656981] (-) TimerEvent: {}
+[8.757637] (-) TimerEvent: {}
+[8.858439] (-) TimerEvent: {}
+[8.959470] (-) TimerEvent: {}
+[9.060621] (-) TimerEvent: {}
+[9.161318] (-) TimerEvent: {}
+[9.261933] (-) TimerEvent: {}
+[9.362694] (-) TimerEvent: {}
+[9.463572] (-) TimerEvent: {}
+[9.478663] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.563679] (-) TimerEvent: {}
+[9.664462] (-) TimerEvent: {}
+[9.765134] (-) TimerEvent: {}
+[9.865909] (-) TimerEvent: {}
+[9.966805] (-) TimerEvent: {}
+[10.067451] (-) TimerEvent: {}
+[10.169629] (-) TimerEvent: {}
+[10.270336] (-) TimerEvent: {}
+[10.371349] (-) TimerEvent: {}
+[10.404929] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.471584] (-) TimerEvent: {}
+[10.541315] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[10.571767] (-) TimerEvent: {}
+[10.582351] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[10.672017] (-) TimerEvent: {}
+[10.755861] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[10.757038] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.758037] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[10.759119] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[10.772351] (-) TimerEvent: {}
+[10.873106] (-) TimerEvent: {}
+[10.878207] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[10.973282] (-) TimerEvent: {}
+[11.073930] (-) TimerEvent: {}
+[11.174671] (-) TimerEvent: {}
+[11.275549] (-) TimerEvent: {}
+[11.310643] (costmap_converter_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.375702] (-) TimerEvent: {}
+[11.477447] (-) TimerEvent: {}
+[11.563629] (costmap_converter_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[11.577599] (-) TimerEvent: {}
+[11.578398] (costmap_converter_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/amr_ws/src/build/costmap_converter_msgs\n'}
+[11.624757] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[11.626898] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'build'}
+[11.629611] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/amr_ws/src/build/costmap_converter_msgs', '--', '-j4', '-l4'], 'cwd': '/home/pi/amr_ws/src/build/costmap_converter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.68.12 54096 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/amr_ws/install/witmotion_ros/lib:/home/pi/amr_ws/install/micro_ros_agent/lib:/home/pi/amr_ws/install/micro_ros_msgs/lib:/home/pi/amr_ws/install/foxglove_bridge/lib:/home/pi/amr_ws/install/amr_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/amr_ws/src/teb_local_planner'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('ROS_LOG_DIR', '/home/pi/nulldir'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/amr_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_control:/home/pi/amr_ws/install/amr_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/pi/amr_ws/src/build/costmap_converter_msgs'), ('SSH_CONNECTION', '192.168.68.12 54096 192.168.68.24 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/amr_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/amr_control/lib/python3.10/site-packages:/home/pi/amr_ws/install/amr_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_interface:/home/pi/amr_ws/install/amr_control:/opt/ros/humble')]), 'shell': False}
+[11.677778] (-) TimerEvent: {}
+[11.778507] (-) TimerEvent: {}
+[11.871441] (costmap_converter_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[11.878700] (-) TimerEvent: {}
+[11.928563] (costmap_converter_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[11.979017] (-) TimerEvent: {}
+[12.009148] (costmap_converter_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_costmap_converter_msgs\n'}
+[12.079280] (-) TimerEvent: {}
+[12.181204] (-) TimerEvent: {}
+[12.282382] (-) TimerEvent: {}
+[12.383225] (-) TimerEvent: {}
+[12.484708] (-) TimerEvent: {}
+[12.588021] (-) TimerEvent: {}
+[12.694709] (-) TimerEvent: {}
+[12.802895] (-) TimerEvent: {}
+[12.903925] (-) TimerEvent: {}
+[13.005083] (-) TimerEvent: {}
+[13.105940] (-) TimerEvent: {}
+[13.207044] (-) TimerEvent: {}
+[13.307851] (-) TimerEvent: {}
+[13.408644] (-) TimerEvent: {}
+[13.509465] (-) TimerEvent: {}
+[13.610348] (-) TimerEvent: {}
+[13.711354] (-) TimerEvent: {}
+[13.812196] (-) TimerEvent: {}
+[13.913086] (-) TimerEvent: {}
+[14.014151] (-) TimerEvent: {}
+[14.115209] (-) TimerEvent: {}
+[14.216240] (-) TimerEvent: {}
+[14.317189] (-) TimerEvent: {}
+[14.418308] (-) TimerEvent: {}
+[14.424957] (costmap_converter_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[14.428506] (costmap_converter_msgs) StdoutLine: {'line': b'creating costmap_converter_msgs.egg-info\n'}
+[14.430037] (costmap_converter_msgs) StdoutLine: {'line': b'writing costmap_converter_msgs.egg-info/PKG-INFO\n'}
+[14.431148] (costmap_converter_msgs) StdoutLine: {'line': b'writing dependency_links to costmap_converter_msgs.egg-info/dependency_links.txt\n'}
+[14.438674] (costmap_converter_msgs) StdoutLine: {'line': b'writing top-level names to costmap_converter_msgs.egg-info/top_level.txt\n'}
+[14.439569] (costmap_converter_msgs) StdoutLine: {'line': b"writing manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[14.468784] (costmap_converter_msgs) StdoutLine: {'line': b"reading manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[14.474005] (costmap_converter_msgs) StdoutLine: {'line': b"writing manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[14.518617] (-) TimerEvent: {}
+[14.620240] (-) TimerEvent: {}
+[14.749746] (-) TimerEvent: {}
+[14.784263] (costmap_converter_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_costmap_converter_msgs_egg\n'}
+[14.851443] (-) TimerEvent: {}
+[14.954412] (-) TimerEvent: {}
+[15.057208] (-) TimerEvent: {}
+[15.163583] (-) TimerEvent: {}
+[15.166043] (costmap_converter_msgs) StdoutLine: {'line': b'[  5%] Built target costmap_converter_msgs__cpp\n'}
+[15.191296] (costmap_converter_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_c.dir/rosidl_generator_c/costmap_converter_msgs/msg/detail/obstacle_msg__functions.c.o\x1b[0m\n'}
+[15.218845] (costmap_converter_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_c.dir/rosidl_generator_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.c.o\x1b[0m\n'}
+[15.235717] (costmap_converter_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.262164] (costmap_converter_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[15.264051] (-) TimerEvent: {}
+[15.366074] (-) TimerEvent: {}
+[15.467588] (-) TimerEvent: {}
+[15.571703] (-) TimerEvent: {}
+[15.672629] (-) TimerEvent: {}
+[15.774922] (-) TimerEvent: {}
+[15.876508] (-) TimerEvent: {}
+[15.977956] (-) TimerEvent: {}
+[16.080067] (-) TimerEvent: {}
+[16.094773] (costmap_converter_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[16.181527] (-) TimerEvent: {}
+[16.245849] (costmap_converter_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libcostmap_converter_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[16.282639] (-) TimerEvent: {}
+[16.384622] (-) TimerEvent: {}
+[16.488492] (-) TimerEvent: {}
+[16.589342] (-) TimerEvent: {}
+[16.691383] (-) TimerEvent: {}
+[16.793841] (-) TimerEvent: {}
+[16.896461] (-) TimerEvent: {}
+[16.989738] (costmap_converter_msgs) StdoutLine: {'line': b'[ 20%] Built target costmap_converter_msgs__rosidl_generator_c\n'}
+[16.997688] (-) TimerEvent: {}
+[17.100308] (-) TimerEvent: {}
+[17.126027] (costmap_converter_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[17.200574] (-) TimerEvent: {}
+[17.302894] (-) TimerEvent: {}
+[17.404863] (-) TimerEvent: {}
+[17.505856] (-) TimerEvent: {}
+[17.606756] (-) TimerEvent: {}
+[17.707882] (-) TimerEvent: {}
+[17.811760] (-) TimerEvent: {}
+[17.917137] (-) TimerEvent: {}
+[18.018793] (-) TimerEvent: {}
+[18.120015] (-) TimerEvent: {}
+[18.222835] (-) TimerEvent: {}
+[18.324031] (-) TimerEvent: {}
+[18.425000] (-) TimerEvent: {}
+[18.526027] (-) TimerEvent: {}
+[18.627301] (-) TimerEvent: {}
+[18.728992] (-) TimerEvent: {}
+[18.830281] (-) TimerEvent: {}
+[18.931672] (-) TimerEvent: {}
+[19.032739] (-) TimerEvent: {}
+[19.138841] (-) TimerEvent: {}
+[19.160864] (costmap_converter_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/costmap_converter_msgs/msg/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[19.239035] (-) TimerEvent: {}
+[19.344231] (-) TimerEvent: {}
+[19.445595] (-) TimerEvent: {}
+[19.550881] (-) TimerEvent: {}
+[19.657565] (-) TimerEvent: {}
+[19.759258] (-) TimerEvent: {}
+[19.865502] (-) TimerEvent: {}
+[19.970057] (-) TimerEvent: {}
+[20.080674] (-) TimerEvent: {}
+[20.182054] (-) TimerEvent: {}
+[20.183852] (costmap_converter_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/costmap_converter_msgs/msg/detail/dds_fastrtps/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[20.282205] (-) TimerEvent: {}
+[20.303224] (costmap_converter_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[20.382432] (-) TimerEvent: {}
+[20.441615] (costmap_converter_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/costmap_converter_msgs/msg/detail/obstacle_msg__type_support_c.cpp.o\x1b[0m\n'}
+[20.482644] (-) TimerEvent: {}
+[20.584097] (-) TimerEvent: {}
+[20.686124] (-) TimerEvent: {}
+[20.788856] (-) TimerEvent: {}
+[20.890436] (-) TimerEvent: {}
+[20.995925] (-) TimerEvent: {}
+[21.099689] (-) TimerEvent: {}
+[21.204176] (-) TimerEvent: {}
+[21.308988] (-) TimerEvent: {}
+[21.410525] (-) TimerEvent: {}
+[21.511785] (-) TimerEvent: {}
+[21.613694] (-) TimerEvent: {}
+[21.715712] (-) TimerEvent: {}
+[21.816982] (-) TimerEvent: {}
+[21.918317] (-) TimerEvent: {}
+[22.020018] (-) TimerEvent: {}
+[22.121452] (-) TimerEvent: {}
+[22.222823] (-) TimerEvent: {}
+[22.324930] (-) TimerEvent: {}
+[22.428687] (-) TimerEvent: {}
+[22.536979] (-) TimerEvent: {}
+[22.568304] (costmap_converter_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/costmap_converter_msgs/msg/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[22.637292] (-) TimerEvent: {}
+[22.742611] (-) TimerEvent: {}
+[22.844244] (-) TimerEvent: {}
+[22.947707] (-) TimerEvent: {}
+[23.048942] (-) TimerEvent: {}
+[23.150241] (-) TimerEvent: {}
+[23.251598] (-) TimerEvent: {}
+[23.356304] (-) TimerEvent: {}
+[23.458074] (-) TimerEvent: {}
+[23.564800] (-) TimerEvent: {}
+[23.666653] (-) TimerEvent: {}
+[23.768468] (-) TimerEvent: {}
+[23.870135] (-) TimerEvent: {}
+[23.971317] (-) TimerEvent: {}
+[24.072988] (-) TimerEvent: {}
+[24.174685] (-) TimerEvent: {}
+[24.277611] (-) TimerEvent: {}
+[24.382210] (-) TimerEvent: {}
+[24.486242] (-) TimerEvent: {}
+[24.588949] (-) TimerEvent: {}
+[24.690566] (-) TimerEvent: {}
+[24.791756] (-) TimerEvent: {}
+[24.893211] (-) TimerEvent: {}
+[24.994916] (-) TimerEvent: {}
+[25.001607] (costmap_converter_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support_c.cpp.o\x1b[0m\n'}
+[25.095136] (-) TimerEvent: {}
+[25.129538] (costmap_converter_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[25.195392] (-) TimerEvent: {}
+[25.299057] (-) TimerEvent: {}
+[25.369349] (costmap_converter_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/costmap_converter_msgs/msg/detail/dds_fastrtps/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[25.399281] (-) TimerEvent: {}
+[25.501193] (-) TimerEvent: {}
+[25.605996] (-) TimerEvent: {}
+[25.709889] (-) TimerEvent: {}
+[25.813792] (-) TimerEvent: {}
+[25.899335] (costmap_converter_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[25.917715] (-) TimerEvent: {}
+[26.019775] (-) TimerEvent: {}
+[26.124525] (-) TimerEvent: {}
+[26.225743] (-) TimerEvent: {}
+[26.298068] (costmap_converter_msgs) StdoutLine: {'line': b'[ 46%] Built target costmap_converter_msgs__rosidl_typesupport_cpp\n'}
+[26.326136] (-) TimerEvent: {}
+[26.386018] (costmap_converter_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[26.426527] (-) TimerEvent: {}
+[26.527379] (-) TimerEvent: {}
+[26.628448] (-) TimerEvent: {}
+[26.729528] (-) TimerEvent: {}
+[26.840763] (-) TimerEvent: {}
+[26.942026] (-) TimerEvent: {}
+[27.044366] (-) TimerEvent: {}
+[27.145418] (-) TimerEvent: {}
+[27.248060] (-) TimerEvent: {}
+[27.348955] (-) TimerEvent: {}
+[27.453093] (-) TimerEvent: {}
+[27.558320] (-) TimerEvent: {}
+[27.660588] (-) TimerEvent: {}
+[27.763318] (-) TimerEvent: {}
+[27.864984] (-) TimerEvent: {}
+[27.966920] (-) TimerEvent: {}
+[28.068002] (-) TimerEvent: {}
+[28.169658] (-) TimerEvent: {}
+[28.270914] (-) TimerEvent: {}
+[28.374942] (-) TimerEvent: {}
+[28.476510] (-) TimerEvent: {}
+[28.577562] (-) TimerEvent: {}
+[28.679318] (-) TimerEvent: {}
+[28.780892] (-) TimerEvent: {}
+[28.882420] (-) TimerEvent: {}
+[28.983723] (-) TimerEvent: {}
+[29.085337] (-) TimerEvent: {}
+[29.186912] (-) TimerEvent: {}
+[29.299274] (-) TimerEvent: {}
+[29.400840] (-) TimerEvent: {}
+[29.503104] (-) TimerEvent: {}
+[29.607856] (-) TimerEvent: {}
+[29.709085] (-) TimerEvent: {}
+[29.812472] (-) TimerEvent: {}
+[29.914439] (-) TimerEvent: {}
+[30.000791] (costmap_converter_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.c.o\x1b[0m\n'}
+[30.014701] (-) TimerEvent: {}
+[30.115829] (-) TimerEvent: {}
+[30.217037] (-) TimerEvent: {}
+[30.273088] (costmap_converter_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[30.317301] (-) TimerEvent: {}
+[30.418294] (-) TimerEvent: {}
+[30.515760] (costmap_converter_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.c.o\x1b[0m\n'}
+[30.518523] (-) TimerEvent: {}
+[30.619532] (-) TimerEvent: {}
+[30.723446] (-) TimerEvent: {}
+[30.824561] (-) TimerEvent: {}
+[30.925763] (-) TimerEvent: {}
+[31.027162] (-) TimerEvent: {}
+[31.043654] (costmap_converter_msgs) StdoutLine: {'line': b'[ 56%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_c\n'}
+[31.127399] (-) TimerEvent: {}
+[31.129989] (costmap_converter_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[31.227677] (-) TimerEvent: {}
+[31.328889] (-) TimerEvent: {}
+[31.339389] (costmap_converter_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[31.429142] (-) TimerEvent: {}
+[31.455568] (costmap_converter_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[31.527883] (costmap_converter_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[31.529317] (-) TimerEvent: {}
+[31.630265] (-) TimerEvent: {}
+[31.723048] (costmap_converter_msgs) StdoutLine: {'line': b'[ 66%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_c\n'}
+[31.730494] (-) TimerEvent: {}
+[31.843269] (-) TimerEvent: {}
+[31.944695] (-) TimerEvent: {}
+[32.046761] (-) TimerEvent: {}
+[32.106252] (costmap_converter_msgs) StdoutLine: {'line': b'[ 66%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[32.129868] (costmap_converter_msgs) StdoutLine: {'line': b'[ 66%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_cpp\n'}
+[32.147089] (-) TimerEvent: {}
+[32.248572] (-) TimerEvent: {}
+[32.349326] (-) TimerEvent: {}
+[32.449997] (-) TimerEvent: {}
+[32.550649] (-) TimerEvent: {}
+[32.651478] (-) TimerEvent: {}
+[32.752211] (-) TimerEvent: {}
+[32.852919] (-) TimerEvent: {}
+[32.953578] (-) TimerEvent: {}
+[33.054367] (-) TimerEvent: {}
+[33.155812] (-) TimerEvent: {}
+[33.256650] (-) TimerEvent: {}
+[33.296671] (costmap_converter_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/costmap_converter_msgs/msg/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[33.310372] (costmap_converter_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/costmap_converter_msgs/msg/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[33.356846] (-) TimerEvent: {}
+[33.457779] (-) TimerEvent: {}
+[33.505942] (costmap_converter_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[33.557947] (-) TimerEvent: {}
+[33.658625] (-) TimerEvent: {}
+[33.714727] (costmap_converter_msgs) StdoutLine: {'line': b'[ 74%] Built target costmap_converter_msgs__rosidl_typesupport_c\n'}
+[33.758827] (-) TimerEvent: {}
+[33.829635] (costmap_converter_msgs) StdoutLine: {'line': b'[ 74%] Built target costmap_converter_msgs\n'}
+[33.859006] (-) TimerEvent: {}
+[33.942933] (costmap_converter_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[33.959195] (-) TimerEvent: {}
+[34.060425] (-) TimerEvent: {}
+[34.161131] (-) TimerEvent: {}
+[34.261791] (-) TimerEvent: {}
+[34.362439] (-) TimerEvent: {}
+[34.463120] (-) TimerEvent: {}
+[34.563792] (-) TimerEvent: {}
+[34.664449] (-) TimerEvent: {}
+[34.765245] (-) TimerEvent: {}
+[34.865849] (-) TimerEvent: {}
+[34.966438] (-) TimerEvent: {}
+[35.067053] (-) TimerEvent: {}
+[35.167703] (-) TimerEvent: {}
+[35.268335] (-) TimerEvent: {}
+[35.369004] (-) TimerEvent: {}
+[35.469715] (-) TimerEvent: {}
+[35.570427] (-) TimerEvent: {}
+[35.671532] (-) TimerEvent: {}
+[35.772262] (-) TimerEvent: {}
+[35.873014] (-) TimerEvent: {}
+[35.973657] (-) TimerEvent: {}
+[36.074402] (-) TimerEvent: {}
+[36.175047] (-) TimerEvent: {}
+[36.275999] (-) TimerEvent: {}
+[36.376770] (-) TimerEvent: {}
+[36.477901] (-) TimerEvent: {}
+[36.579056] (-) TimerEvent: {}
+[36.604961] (costmap_converter_msgs) StdoutLine: {'line': b'[ 76%] Built target costmap_converter_msgs__py\n'}
+[36.679242] (-) TimerEvent: {}
+[36.724049] (costmap_converter_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_py.dir/rosidl_generator_py/costmap_converter_msgs/msg/_obstacle_array_msg_s.c.o\x1b[0m\n'}
+[36.747746] (costmap_converter_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_py.dir/rosidl_generator_py/costmap_converter_msgs/msg/_obstacle_msg_s.c.o\x1b[0m\n'}
+[36.779446] (-) TimerEvent: {}
+[36.880510] (-) TimerEvent: {}
+[36.982247] (-) TimerEvent: {}
+[37.084395] (-) TimerEvent: {}
+[37.185202] (-) TimerEvent: {}
+[37.286020] (-) TimerEvent: {}
+[37.387582] (-) TimerEvent: {}
+[37.489608] (-) TimerEvent: {}
+[37.538453] (costmap_converter_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/libcostmap_converter_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[37.590048] (-) TimerEvent: {}
+[37.690878] (-) TimerEvent: {}
+[37.789957] (costmap_converter_msgs) StdoutLine: {'line': b'[ 84%] Built target costmap_converter_msgs__rosidl_generator_py\n'}
+[37.791196] (-) TimerEvent: {}
+[37.892084] (-) TimerEvent: {}
+[37.910457] (costmap_converter_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[37.956677] (costmap_converter_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[37.982342] (costmap_converter_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[37.992434] (-) TimerEvent: {}
+[38.093282] (-) TimerEvent: {}
+[38.194059] (-) TimerEvent: {}
+[38.294826] (-) TimerEvent: {}
+[38.395894] (-) TimerEvent: {}
+[38.496740] (-) TimerEvent: {}
+[38.597762] (-) TimerEvent: {}
+[38.699667] (-) TimerEvent: {}
+[38.807710] (-) TimerEvent: {}
+[38.905283] (costmap_converter_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[38.907937] (-) TimerEvent: {}
+[38.991398] (costmap_converter_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[38.998802] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[39.008244] (-) TimerEvent: {}
+[39.109317] (-) TimerEvent: {}
+[39.212640] (-) TimerEvent: {}
+[39.300791] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[39.313132] (-) TimerEvent: {}
+[39.414314] (-) TimerEvent: {}
+[39.431803] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] Built target costmap_converter_msgs__rosidl_typesupport_c__pyext\n'}
+[39.438709] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[39.493364] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[39.514463] (-) TimerEvent: {}
+[39.615167] (-) TimerEvent: {}
+[39.716808] (-) TimerEvent: {}
+[39.817979] (-) TimerEvent: {}
+[39.918617] (-) TimerEvent: {}
+[40.019242] (-) TimerEvent: {}
+[40.064252] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'install'}
+[40.112183] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/amr_ws/src/build/costmap_converter_msgs'], 'cwd': '/home/pi/amr_ws/src/build/costmap_converter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.68.12 54096 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/amr_ws/install/witmotion_ros/lib:/home/pi/amr_ws/install/micro_ros_agent/lib:/home/pi/amr_ws/install/micro_ros_msgs/lib:/home/pi/amr_ws/install/foxglove_bridge/lib:/home/pi/amr_ws/install/amr_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/amr_ws/src/teb_local_planner'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('ROS_LOG_DIR', '/home/pi/nulldir'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/amr_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_control:/home/pi/amr_ws/install/amr_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/pi/amr_ws/src/build/costmap_converter_msgs'), ('SSH_CONNECTION', '192.168.68.12 54096 192.168.68.24 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/amr_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/amr_control/lib/python3.10/site-packages:/home/pi/amr_ws/install/amr_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_interface:/home/pi/amr_ws/install/amr_control:/opt/ros/humble')]), 'shell': False}
+[40.119418] (-) TimerEvent: {}
+[40.155854] (costmap_converter_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[40.157002] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/ament_index/resource_index/rosidl_interfaces/costmap_converter_msgs\n'}
+[40.158804] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs\n'}
+[40.159736] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg\n'}
+[40.160568] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[40.162185] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.h\n'}
+[40.163456] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail\n'}
+[40.164694] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.h\n'}
+[40.166161] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.h\n'}
+[40.167581] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.h\n'}
+[40.168873] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.c\n'}
+[40.170938] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.h\n'}
+[40.172545] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.h\n'}
+[40.173887] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__functions.c\n'}
+[40.175318] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__functions.h\n'}
+[40.176731] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.h\n'}
+[40.178593] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.sh\n'}
+[40.180017] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.dsv\n'}
+[40.181709] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_c.so\n'}
+[40.184693] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_c.so" to ""\n'}
+[40.185379] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs\n'}
+[40.185924] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg\n'}
+[40.186331] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[40.187439] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail\n'}
+[40.188326] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[40.189746] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[40.191401] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[40.194776] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[40.195761] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs\n'}
+[40.196660] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg\n'}
+[40.197436] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.hpp\n'}
+[40.198184] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.hpp\n'}
+[40.198897] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail\n'}
+[40.199941] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.hpp\n'}
+[40.200822] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__builder.hpp\n'}
+[40.202239] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.hpp\n'}
+[40.203731] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__traits.hpp\n'}
+[40.205132] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__builder.hpp\n'}
+[40.206554] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__traits.hpp\n'}
+[40.208000] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs\n'}
+[40.208615] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg\n'}
+[40.209240] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[40.211098] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail\n'}
+[40.212022] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[40.213475] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[40.214852] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/dds_fastrtps\n'}
+[40.216033] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[40.219549] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[40.220184] (-) TimerEvent: {}
+[40.220732] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs\n'}
+[40.221961] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg\n'}
+[40.222607] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[40.223732] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail\n'}
+[40.224432] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.c\n'}
+[40.224982] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_c.h\n'}
+[40.226453] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_c.h\n'}
+[40.228163] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.c\n'}
+[40.229768] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so\n'}
+[40.232771] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[40.233599] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_c.so\n'}
+[40.236134] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_c.so" to ""\n'}
+[40.236856] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs\n'}
+[40.237458] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg\n'}
+[40.238085] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail\n'}
+[40.238570] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.cpp\n'}
+[40.239631] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[40.241447] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[40.242951] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.cpp\n'}
+[40.244831] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[40.248704] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[40.249668] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_cpp.so\n'}
+[40.252869] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[40.253679] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.sh\n'}
+[40.255031] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.dsv\n'}
+[40.256557] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info\n'}
+[40.258013] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/PKG-INFO\n'}
+[40.259418] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/top_level.txt\n'}
+[40.260804] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/SOURCES.txt\n'}
+[40.262219] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs-0.1.2-py3.10.egg-info/dependency_links.txt\n'}
+[40.263947] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs\n'}
+[40.264885] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[40.266631] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg\n'}
+[40.267541] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_array_msg.py\n'}
+[40.268974] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_msg.py\n'}
+[40.270379] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/__init__.py\n'}
+[40.271777] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_array_msg_s.c\n'}
+[40.273243] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_msg_s.c\n'}
+[40.274679] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[40.276404] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[40.278142] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/libcostmap_converter_msgs__rosidl_generator_py.so\n'}
+[40.279694] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/__init__.py\n'}
+[40.280987] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[40.282609] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[40.284397] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[40.320390] (-) TimerEvent: {}
+[40.421268] (-) TimerEvent: {}
+[40.482383] (costmap_converter_msgs) StdoutLine: {'line': b"Listing '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs'...\n"}
+[40.484042] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/__init__.py'...\n"}
+[40.485232] (costmap_converter_msgs) StdoutLine: {'line': b"Listing '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg'...\n"}
+[40.486359] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/__init__.py'...\n"}
+[40.487861] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_array_msg.py'...\n"}
+[40.491467] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/msg/_obstacle_msg.py'...\n"}
+[40.514084] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[40.517347] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[40.519333] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[40.521441] (-) TimerEvent: {}
+[40.523603] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[40.525883] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[40.529322] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[40.530647] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_py.so\n'}
+[40.533756] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_py.so" to ""\n'}
+[40.534638] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.idl\n'}
+[40.536145] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.idl\n'}
+[40.537624] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.msg\n'}
+[40.538951] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.msg\n'}
+[40.540810] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/ament_index/resource_index/package_run_dependencies/costmap_converter_msgs\n'}
+[40.542857] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/ament_index/resource_index/parent_prefix_path/costmap_converter_msgs\n'}
+[40.544425] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.sh\n'}
+[40.545946] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.dsv\n'}
+[40.547347] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.sh\n'}
+[40.548775] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.dsv\n'}
+[40.550322] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.bash\n'}
+[40.551668] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.sh\n'}
+[40.553096] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.zsh\n'}
+[40.554550] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.dsv\n'}
+[40.556169] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/package.dsv\n'}
+[40.558151] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/ament_index/resource_index/packages/costmap_converter_msgs\n'}
+[40.560067] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport.cmake\n'}
+[40.561759] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[40.563583] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[40.565467] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[40.567201] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cppExport.cmake\n'}
+[40.568956] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[40.571652] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[40.573448] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[40.575199] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[40.577013] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport.cmake\n'}
+[40.578708] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[40.580543] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[40.582316] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[40.584210] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[40.585966] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[40.587950] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport.cmake\n'}
+[40.589748] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[40.591310] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[40.592803] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[40.594427] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[40.596034] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[40.597730] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[40.599399] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[40.600771] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[40.602309] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig.cmake\n'}
+[40.603693] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig-version.cmake\n'}
+[40.605115] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/package.xml\n'}
+[40.614010] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[40.631762] (-) TimerEvent: {}
+[40.732633] (-) TimerEvent: {}
+[40.833438] (-) TimerEvent: {}
+[40.934051] (-) TimerEvent: {}
+[41.034678] (-) TimerEvent: {}
+[41.135657] (-) TimerEvent: {}
+[41.236323] (-) TimerEvent: {}
+[41.340563] (-) TimerEvent: {}
+[41.395250] (costmap_converter_msgs) JobEnded: {'identifier': 'costmap_converter_msgs', 'rc': 0}
+[41.413158] (teb_msgs) JobStarted: {'identifier': 'teb_msgs'}
+[41.440731] (-) TimerEvent: {}
+[41.479654] (teb_msgs) JobProgress: {'identifier': 'teb_msgs', 'progress': 'cmake'}
+[41.487154] (teb_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/amr_ws/src/teb_local_planner/teb_msgs', '-DCMAKE_INSTALL_PREFIX=/home/pi/amr_ws/src/install/teb_msgs'], 'cwd': '/home/pi/amr_ws/src/build/teb_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.68.12 54096 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs/lib:/home/pi/amr_ws/install/witmotion_ros/lib:/home/pi/amr_ws/install/micro_ros_agent/lib:/home/pi/amr_ws/install/micro_ros_msgs/lib:/home/pi/amr_ws/install/foxglove_bridge/lib:/home/pi/amr_ws/install/amr_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/amr_ws/src/teb_local_planner'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('ROS_LOG_DIR', '/home/pi/nulldir'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/amr_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs:/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_control:/home/pi/amr_ws/install/amr_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/pi/amr_ws/src/build/teb_msgs'), ('SSH_CONNECTION', '192.168.68.12 54096 192.168.68.24 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/amr_control/lib/python3.10/site-packages:/home/pi/amr_ws/install/amr_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs:/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_interface:/home/pi/amr_ws/install/amr_control:/opt/ros/humble')]), 'shell': False}
+[41.540957] (-) TimerEvent: {}
+[41.559290] (teb_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[41.641161] (-) TimerEvent: {}
+[41.741979] (-) TimerEvent: {}
+[41.866987] (-) TimerEvent: {}
+[41.967784] (-) TimerEvent: {}
+[42.068466] (-) TimerEvent: {}
+[42.169096] (-) TimerEvent: {}
+[42.269759] (-) TimerEvent: {}
+[42.370545] (-) TimerEvent: {}
+[42.417070] (teb_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[42.470668] (-) TimerEvent: {}
+[42.571326] (-) TimerEvent: {}
+[42.600282] (teb_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[42.612790] (teb_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[42.641813] (teb_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[42.671557] (-) TimerEvent: {}
+[42.697285] (teb_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[42.771701] (-) TimerEvent: {}
+[42.775412] (teb_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[42.849295] (teb_msgs) StdoutLine: {'line': b'-- Found costmap_converter_msgs: 0.1.2 (/home/pi/amr_ws/src/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake)\n'}
+[42.871865] (-) TimerEvent: {}
+[42.972502] (-) TimerEvent: {}
+[43.073186] (-) TimerEvent: {}
+[43.173891] (-) TimerEvent: {}
+[43.274531] (-) TimerEvent: {}
+[43.375252] (-) TimerEvent: {}
+[43.475958] (-) TimerEvent: {}
+[43.576678] (-) TimerEvent: {}
+[43.677360] (-) TimerEvent: {}
+[43.715071] (teb_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[43.777518] (-) TimerEvent: {}
+[43.878122] (-) TimerEvent: {}
+[43.978790] (-) TimerEvent: {}
+[44.079862] (-) TimerEvent: {}
+[44.180527] (-) TimerEvent: {}
+[44.281176] (-) TimerEvent: {}
+[44.381961] (-) TimerEvent: {}
+[44.482725] (-) TimerEvent: {}
+[44.583601] (-) TimerEvent: {}
+[44.684559] (-) TimerEvent: {}
+[44.785432] (-) TimerEvent: {}
+[44.886181] (-) TimerEvent: {}
+[44.987033] (-) TimerEvent: {}
+[45.088128] (-) TimerEvent: {}
+[45.189382] (-) TimerEvent: {}
+[45.291189] (-) TimerEvent: {}
+[45.392332] (-) TimerEvent: {}
+[45.492966] (-) TimerEvent: {}
+[45.535709] (teb_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[45.593119] (-) TimerEvent: {}
+[45.693743] (-) TimerEvent: {}
+[45.794406] (-) TimerEvent: {}
+[45.895111] (-) TimerEvent: {}
+[45.995845] (-) TimerEvent: {}
+[46.096772] (-) TimerEvent: {}
+[46.197833] (-) TimerEvent: {}
+[46.298798] (-) TimerEvent: {}
+[46.399977] (-) TimerEvent: {}
+[46.500701] (-) TimerEvent: {}
+[46.601336] (-) TimerEvent: {}
+[46.702006] (-) TimerEvent: {}
+[46.803214] (-) TimerEvent: {}
+[46.904191] (-) TimerEvent: {}
+[47.004792] (-) TimerEvent: {}
+[47.105415] (-) TimerEvent: {}
+[47.206428] (-) TimerEvent: {}
+[47.307188] (-) TimerEvent: {}
+[47.408103] (-) TimerEvent: {}
+[47.509045] (-) TimerEvent: {}
+[47.609938] (-) TimerEvent: {}
+[47.710733] (-) TimerEvent: {}
+[47.811418] (-) TimerEvent: {}
+[47.912871] (-) TimerEvent: {}
+[47.946445] (teb_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[48.013050] (-) TimerEvent: {}
+[48.113705] (-) TimerEvent: {}
+[48.214571] (-) TimerEvent: {}
+[48.315249] (-) TimerEvent: {}
+[48.415980] (-) TimerEvent: {}
+[48.516610] (-) TimerEvent: {}
+[48.617273] (-) TimerEvent: {}
+[48.718015] (-) TimerEvent: {}
+[48.818970] (-) TimerEvent: {}
+[48.841302] (teb_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[48.919212] (-) TimerEvent: {}
+[48.970352] (teb_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[49.009646] (teb_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[49.019447] (-) TimerEvent: {}
+[49.120253] (-) TimerEvent: {}
+[49.158664] (teb_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[49.159598] (teb_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[49.160084] (teb_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[49.160510] (teb_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[49.220379] (-) TimerEvent: {}
+[49.281684] (teb_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[49.320553] (-) TimerEvent: {}
+[49.421327] (-) TimerEvent: {}
+[49.522242] (-) TimerEvent: {}
+[49.623042] (-) TimerEvent: {}
+[49.677103] (teb_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[49.723216] (-) TimerEvent: {}
+[49.823976] (-) TimerEvent: {}
+[49.924723] (-) TimerEvent: {}
+[49.936032] (teb_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[49.951263] (teb_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/amr_ws/src/build/teb_msgs\n'}
+[49.987092] (teb_msgs) CommandEnded: {'returncode': 0}
+[49.989872] (teb_msgs) JobProgress: {'identifier': 'teb_msgs', 'progress': 'build'}
+[49.991149] (teb_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/amr_ws/src/build/teb_msgs', '--', '-j4', '-l4'], 'cwd': '/home/pi/amr_ws/src/build/teb_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.68.12 54096 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs/lib:/home/pi/amr_ws/install/witmotion_ros/lib:/home/pi/amr_ws/install/micro_ros_agent/lib:/home/pi/amr_ws/install/micro_ros_msgs/lib:/home/pi/amr_ws/install/foxglove_bridge/lib:/home/pi/amr_ws/install/amr_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/amr_ws/src/teb_local_planner'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('ROS_LOG_DIR', '/home/pi/nulldir'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/amr_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs:/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_control:/home/pi/amr_ws/install/amr_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/pi/amr_ws/src/build/teb_msgs'), ('SSH_CONNECTION', '192.168.68.12 54096 192.168.68.24 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/amr_control/lib/python3.10/site-packages:/home/pi/amr_ws/install/amr_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs:/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_interface:/home/pi/amr_ws/install/amr_control:/opt/ros/humble')]), 'shell': False}
+[50.024975] (-) TimerEvent: {}
+[50.125804] (-) TimerEvent: {}
+[50.225427] (teb_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[50.226537] (-) TimerEvent: {}
+[50.328881] (-) TimerEvent: {}
+[50.343558] (teb_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[50.429058] (-) TimerEvent: {}
+[50.489489] (teb_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_teb_msgs\n'}
+[50.529270] (-) TimerEvent: {}
+[50.631216] (-) TimerEvent: {}
+[50.732766] (-) TimerEvent: {}
+[50.839068] (-) TimerEvent: {}
+[50.940393] (-) TimerEvent: {}
+[51.041716] (-) TimerEvent: {}
+[51.143792] (-) TimerEvent: {}
+[51.248159] (-) TimerEvent: {}
+[51.348936] (-) TimerEvent: {}
+[51.450059] (-) TimerEvent: {}
+[51.551337] (-) TimerEvent: {}
+[51.652581] (-) TimerEvent: {}
+[51.753807] (-) TimerEvent: {}
+[51.854585] (-) TimerEvent: {}
+[51.955527] (-) TimerEvent: {}
+[52.056690] (-) TimerEvent: {}
+[52.158120] (-) TimerEvent: {}
+[52.259417] (-) TimerEvent: {}
+[52.360358] (-) TimerEvent: {}
+[52.461152] (-) TimerEvent: {}
+[52.561936] (-) TimerEvent: {}
+[52.662675] (-) TimerEvent: {}
+[52.763586] (-) TimerEvent: {}
+[52.864401] (-) TimerEvent: {}
+[52.965180] (-) TimerEvent: {}
+[53.066372] (-) TimerEvent: {}
+[53.157658] (teb_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[53.163161] (teb_msgs) StdoutLine: {'line': b'creating teb_msgs.egg-info\n'}
+[53.165920] (teb_msgs) StdoutLine: {'line': b'writing teb_msgs.egg-info/PKG-INFO\n'}
+[53.166918] (-) TimerEvent: {}
+[53.175035] (teb_msgs) StdoutLine: {'line': b'writing dependency_links to teb_msgs.egg-info/dependency_links.txt\n'}
+[53.179643] (teb_msgs) StdoutLine: {'line': b'writing top-level names to teb_msgs.egg-info/top_level.txt\n'}
+[53.183256] (teb_msgs) StdoutLine: {'line': b"writing manifest file 'teb_msgs.egg-info/SOURCES.txt'\n"}
+[53.205956] (teb_msgs) StdoutLine: {'line': b"reading manifest file 'teb_msgs.egg-info/SOURCES.txt'\n"}
+[53.214653] (teb_msgs) StdoutLine: {'line': b"writing manifest file 'teb_msgs.egg-info/SOURCES.txt'\n"}
+[53.267345] (-) TimerEvent: {}
+[53.368597] (-) TimerEvent: {}
+[53.469687] (-) TimerEvent: {}
+[53.572008] (-) TimerEvent: {}
+[53.612213] (teb_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_teb_msgs_egg\n'}
+[53.672259] (-) TimerEvent: {}
+[53.773166] (-) TimerEvent: {}
+[53.808107] (teb_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_generator_c.dir/rosidl_generator_c/teb_msgs/msg/detail/feedback_msg__functions.c.o\x1b[0m\n'}
+[53.873737] (teb_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_generator_c.dir/rosidl_generator_c/teb_msgs/msg/detail/trajectory_msg__functions.c.o\x1b[0m\n'}
+[53.874731] (-) TimerEvent: {}
+[53.889387] (teb_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_generator_c.dir/rosidl_generator_c/teb_msgs/msg/detail/trajectory_point_msg__functions.c.o\x1b[0m\n'}
+[53.974967] (-) TimerEvent: {}
+[54.076048] (-) TimerEvent: {}
+[54.180931] (-) TimerEvent: {}
+[54.282102] (-) TimerEvent: {}
+[54.399701] (-) TimerEvent: {}
+[54.500402] (-) TimerEvent: {}
+[54.601199] (-) TimerEvent: {}
+[54.642948] (teb_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libteb_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[54.701413] (-) TimerEvent: {}
+[54.742665] (teb_msgs) StdoutLine: {'line': b'[ 12%] Built target teb_msgs__cpp\n'}
+[54.801794] (-) TimerEvent: {}
+[54.837235] (teb_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[54.859104] (teb_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[54.879719] (teb_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[54.901919] (-) TimerEvent: {}
+[55.003105] (-) TimerEvent: {}
+[55.048206] (teb_msgs) StdoutLine: {'line': b'[ 19%] Built target teb_msgs__rosidl_generator_c\n'}
+[55.103805] (-) TimerEvent: {}
+[55.205484] (-) TimerEvent: {}
+[55.244986] (teb_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[55.305689] (-) TimerEvent: {}
+[55.406376] (-) TimerEvent: {}
+[55.507088] (-) TimerEvent: {}
+[55.609471] (-) TimerEvent: {}
+[55.712473] (-) TimerEvent: {}
+[55.820210] (-) TimerEvent: {}
+[55.921696] (-) TimerEvent: {}
+[56.022478] (-) TimerEvent: {}
+[56.123593] (-) TimerEvent: {}
+[56.224608] (-) TimerEvent: {}
+[56.325798] (-) TimerEvent: {}
+[56.426647] (-) TimerEvent: {}
+[56.529343] (-) TimerEvent: {}
+[56.630667] (-) TimerEvent: {}
+[56.733132] (-) TimerEvent: {}
+[56.834750] (-) TimerEvent: {}
+[56.936235] (-) TimerEvent: {}
+[57.039796] (-) TimerEvent: {}
+[57.140596] (-) TimerEvent: {}
+[57.241481] (-) TimerEvent: {}
+[57.342222] (-) TimerEvent: {}
+[57.443168] (-) TimerEvent: {}
+[57.543930] (-) TimerEvent: {}
+[57.645077] (-) TimerEvent: {}
+[57.747449] (-) TimerEvent: {}
+[57.849471] (-) TimerEvent: {}
+[57.950723] (-) TimerEvent: {}
+[58.052175] (-) TimerEvent: {}
+[58.153164] (-) TimerEvent: {}
+[58.254302] (-) TimerEvent: {}
+[58.355099] (-) TimerEvent: {}
+[58.456384] (-) TimerEvent: {}
+[58.557435] (-) TimerEvent: {}
+[58.600058] (teb_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/teb_msgs/msg/detail/dds_fastrtps/feedback_msg__type_support.cpp.o\x1b[0m\n'}
+[58.657832] (-) TimerEvent: {}
+[58.756326] (teb_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/teb_msgs/msg/feedback_msg__type_support.cpp.o\x1b[0m\n'}
+[58.758162] (-) TimerEvent: {}
+[58.859515] (-) TimerEvent: {}
+[58.960270] (-) TimerEvent: {}
+[59.060966] (-) TimerEvent: {}
+[59.161876] (-) TimerEvent: {}
+[59.263086] (-) TimerEvent: {}
+[59.365660] (-) TimerEvent: {}
+[59.467199] (-) TimerEvent: {}
+[59.568909] (-) TimerEvent: {}
+[59.669876] (-) TimerEvent: {}
+[59.770659] (-) TimerEvent: {}
+[59.872741] (-) TimerEvent: {}
+[59.918216] (teb_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/teb_msgs/msg/detail/feedback_msg__type_support_c.cpp.o\x1b[0m\n'}
+[59.973023] (-) TimerEvent: {}
+[60.060199] (teb_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/teb_msgs/msg/detail/feedback_msg__type_support.cpp.o\x1b[0m\n'}
+[60.073416] (-) TimerEvent: {}
+[60.175857] (-) TimerEvent: {}
+[60.276931] (-) TimerEvent: {}
+[60.378043] (-) TimerEvent: {}
+[60.479228] (-) TimerEvent: {}
+[60.580259] (-) TimerEvent: {}
+[60.681133] (-) TimerEvent: {}
+[60.781922] (-) TimerEvent: {}
+[60.882895] (-) TimerEvent: {}
+[60.984191] (-) TimerEvent: {}
+[61.085342] (-) TimerEvent: {}
+[61.186414] (-) TimerEvent: {}
+[61.287895] (-) TimerEvent: {}
+[61.389180] (-) TimerEvent: {}
+[61.490369] (-) TimerEvent: {}
+[61.591792] (-) TimerEvent: {}
+[61.692834] (-) TimerEvent: {}
+[61.794196] (-) TimerEvent: {}
+[61.895625] (-) TimerEvent: {}
+[61.982009] (teb_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/teb_msgs/msg/trajectory_msg__type_support.cpp.o\x1b[0m\n'}
+[61.995740] (-) TimerEvent: {}
+[62.097932] (-) TimerEvent: {}
+[62.213237] (-) TimerEvent: {}
+[62.315430] (-) TimerEvent: {}
+[62.417087] (-) TimerEvent: {}
+[62.518831] (-) TimerEvent: {}
+[62.622614] (-) TimerEvent: {}
+[62.724504] (-) TimerEvent: {}
+[62.827220] (-) TimerEvent: {}
+[62.929399] (-) TimerEvent: {}
+[63.031643] (-) TimerEvent: {}
+[63.133428] (-) TimerEvent: {}
+[63.235966] (-) TimerEvent: {}
+[63.337598] (-) TimerEvent: {}
+[63.439730] (-) TimerEvent: {}
+[63.545186] (-) TimerEvent: {}
+[63.650793] (-) TimerEvent: {}
+[63.752707] (-) TimerEvent: {}
+[63.855750] (-) TimerEvent: {}
+[63.957447] (-) TimerEvent: {}
+[64.059671] (-) TimerEvent: {}
+[64.161671] (-) TimerEvent: {}
+[64.263211] (-) TimerEvent: {}
+[64.366901] (-) TimerEvent: {}
+[64.468726] (-) TimerEvent: {}
+[64.570730] (-) TimerEvent: {}
+[64.657070] (teb_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/teb_msgs/msg/detail/trajectory_msg__type_support_c.cpp.o\x1b[0m\n'}
+[64.672867] (-) TimerEvent: {}
+[64.774652] (-) TimerEvent: {}
+[64.876921] (-) TimerEvent: {}
+[64.983091] (-) TimerEvent: {}
+[65.084944] (-) TimerEvent: {}
+[65.093484] (teb_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/teb_msgs/msg/detail/dds_fastrtps/trajectory_msg__type_support.cpp.o\x1b[0m\n'}
+[65.185140] (-) TimerEvent: {}
+[65.286926] (-) TimerEvent: {}
+[65.390055] (-) TimerEvent: {}
+[65.491949] (-) TimerEvent: {}
+[65.593487] (-) TimerEvent: {}
+[65.694923] (-) TimerEvent: {}
+[65.798399] (-) TimerEvent: {}
+[65.889868] (teb_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/teb_msgs/msg/trajectory_point_msg__type_support.cpp.o\x1b[0m\n'}
+[65.898591] (-) TimerEvent: {}
+[66.000466] (-) TimerEvent: {}
+[66.103083] (-) TimerEvent: {}
+[66.117875] (teb_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/teb_msgs/msg/detail/trajectory_msg__type_support.cpp.o\x1b[0m\n'}
+[66.203583] (-) TimerEvent: {}
+[66.307749] (-) TimerEvent: {}
+[66.409719] (-) TimerEvent: {}
+[66.510905] (-) TimerEvent: {}
+[66.627110] (-) TimerEvent: {}
+[66.731356] (-) TimerEvent: {}
+[66.836311] (-) TimerEvent: {}
+[66.939642] (-) TimerEvent: {}
+[67.049588] (-) TimerEvent: {}
+[67.157682] (-) TimerEvent: {}
+[67.272502] (-) TimerEvent: {}
+[67.373737] (-) TimerEvent: {}
+[67.474791] (-) TimerEvent: {}
+[67.575686] (-) TimerEvent: {}
+[67.676712] (-) TimerEvent: {}
+[67.777721] (-) TimerEvent: {}
+[67.878727] (-) TimerEvent: {}
+[67.979945] (-) TimerEvent: {}
+[68.080860] (-) TimerEvent: {}
+[68.182070] (-) TimerEvent: {}
+[68.283131] (-) TimerEvent: {}
+[68.384334] (-) TimerEvent: {}
+[68.485391] (-) TimerEvent: {}
+[68.586707] (-) TimerEvent: {}
+[68.631033] (teb_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libteb_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[68.688900] (-) TimerEvent: {}
+[68.790719] (-) TimerEvent: {}
+[68.893243] (-) TimerEvent: {}
+[68.999484] (-) TimerEvent: {}
+[69.065974] (teb_msgs) StdoutLine: {'line': b'[ 42%] Built target teb_msgs__rosidl_typesupport_cpp\n'}
+[69.099539] (-) TimerEvent: {}
+[69.201508] (-) TimerEvent: {}
+[69.303872] (-) TimerEvent: {}
+[69.406334] (-) TimerEvent: {}
+[69.444901] (teb_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/teb_msgs/msg/detail/trajectory_point_msg__type_support_c.cpp.o\x1b[0m\n'}
+[69.506419] (-) TimerEvent: {}
+[69.608711] (-) TimerEvent: {}
+[69.711185] (-) TimerEvent: {}
+[69.813515] (-) TimerEvent: {}
+[69.916568] (-) TimerEvent: {}
+[70.019712] (-) TimerEvent: {}
+[70.127014] (-) TimerEvent: {}
+[70.159922] (teb_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/teb_msgs/msg/detail/dds_fastrtps/trajectory_point_msg__type_support.cpp.o\x1b[0m\n'}
+[70.227082] (-) TimerEvent: {}
+[70.332826] (-) TimerEvent: {}
+[70.434169] (-) TimerEvent: {}
+[70.534903] (-) TimerEvent: {}
+[70.636110] (-) TimerEvent: {}
+[70.737432] (-) TimerEvent: {}
+[70.838565] (-) TimerEvent: {}
+[70.940905] (-) TimerEvent: {}
+[71.042030] (-) TimerEvent: {}
+[71.142988] (-) TimerEvent: {}
+[71.163749] (teb_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/teb_msgs/msg/detail/trajectory_point_msg__type_support.cpp.o\x1b[0m\n'}
+[71.243252] (-) TimerEvent: {}
+[71.349435] (-) TimerEvent: {}
+[71.451703] (-) TimerEvent: {}
+[71.553214] (-) TimerEvent: {}
+[71.656569] (-) TimerEvent: {}
+[71.757852] (-) TimerEvent: {}
+[71.859232] (-) TimerEvent: {}
+[71.961121] (-) TimerEvent: {}
+[72.063118] (-) TimerEvent: {}
+[72.164114] (-) TimerEvent: {}
+[72.265905] (-) TimerEvent: {}
+[72.367256] (-) TimerEvent: {}
+[72.470749] (-) TimerEvent: {}
+[72.491892] (teb_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libteb_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[72.571160] (-) TimerEvent: {}
+[72.673648] (-) TimerEvent: {}
+[72.774824] (-) TimerEvent: {}
+[72.876370] (-) TimerEvent: {}
+[72.977783] (-) TimerEvent: {}
+[73.085226] (-) TimerEvent: {}
+[73.131874] (teb_msgs) StdoutLine: {'line': b'[ 51%] Built target teb_msgs__rosidl_typesupport_fastrtps_c\n'}
+[73.187177] (-) TimerEvent: {}
+[73.288043] (-) TimerEvent: {}
+[73.388908] (-) TimerEvent: {}
+[73.497994] (-) TimerEvent: {}
+[73.599655] (-) TimerEvent: {}
+[73.703671] (-) TimerEvent: {}
+[73.804492] (-) TimerEvent: {}
+[73.907094] (-) TimerEvent: {}
+[74.007868] (-) TimerEvent: {}
+[74.077683] (teb_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libteb_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[74.108055] (-) TimerEvent: {}
+[74.208794] (-) TimerEvent: {}
+[74.309668] (-) TimerEvent: {}
+[74.410421] (-) TimerEvent: {}
+[74.511192] (-) TimerEvent: {}
+[74.534832] (teb_msgs) StdoutLine: {'line': b'[ 53%] Built target teb_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[74.611410] (-) TimerEvent: {}
+[74.633625] (teb_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libteb_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[74.711652] (-) TimerEvent: {}
+[74.812388] (-) TimerEvent: {}
+[74.913195] (-) TimerEvent: {}
+[75.013969] (-) TimerEvent: {}
+[75.029647] (teb_msgs) StdoutLine: {'line': b'[ 55%] Built target teb_msgs__rosidl_typesupport_introspection_cpp\n'}
+[75.089349] (teb_msgs) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[75.114190] (-) TimerEvent: {}
+[75.214940] (-) TimerEvent: {}
+[75.315650] (-) TimerEvent: {}
+[75.416443] (-) TimerEvent: {}
+[75.517102] (-) TimerEvent: {}
+[75.617738] (-) TimerEvent: {}
+[75.718391] (-) TimerEvent: {}
+[75.819061] (-) TimerEvent: {}
+[75.919680] (-) TimerEvent: {}
+[76.020333] (-) TimerEvent: {}
+[76.121091] (-) TimerEvent: {}
+[76.221839] (-) TimerEvent: {}
+[76.322599] (-) TimerEvent: {}
+[76.423385] (-) TimerEvent: {}
+[76.524157] (-) TimerEvent: {}
+[76.624998] (-) TimerEvent: {}
+[76.726492] (-) TimerEvent: {}
+[76.827247] (-) TimerEvent: {}
+[76.882250] (teb_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/teb_msgs/msg/feedback_msg__type_support.cpp.o\x1b[0m\n'}
+[76.927433] (-) TimerEvent: {}
+[77.028548] (-) TimerEvent: {}
+[77.097855] (teb_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/teb_msgs/msg/trajectory_point_msg__type_support.cpp.o\x1b[0m\n'}
+[77.128728] (-) TimerEvent: {}
+[77.229423] (-) TimerEvent: {}
+[77.303953] (teb_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/teb_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/teb_msgs/msg/trajectory_msg__type_support.cpp.o\x1b[0m\n'}
+[77.329587] (-) TimerEvent: {}
+[77.430217] (-) TimerEvent: {}
+[77.493049] (teb_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libteb_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[77.530414] (-) TimerEvent: {}
+[77.631150] (-) TimerEvent: {}
+[77.712051] (teb_msgs) StdoutLine: {'line': b'[ 65%] Built target teb_msgs__rosidl_typesupport_c\n'}
+[77.731316] (-) TimerEvent: {}
+[77.771381] (teb_msgs) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[77.831468] (-) TimerEvent: {}
+[77.932145] (-) TimerEvent: {}
+[78.032899] (-) TimerEvent: {}
+[78.133567] (-) TimerEvent: {}
+[78.234194] (-) TimerEvent: {}
+[78.334864] (-) TimerEvent: {}
+[78.435652] (-) TimerEvent: {}
+[78.536328] (-) TimerEvent: {}
+[78.636958] (-) TimerEvent: {}
+[78.737601] (-) TimerEvent: {}
+[78.838278] (-) TimerEvent: {}
+[78.939037] (-) TimerEvent: {}
+[79.039748] (-) TimerEvent: {}
+[79.140437] (-) TimerEvent: {}
+[79.241062] (-) TimerEvent: {}
+[79.341703] (-) TimerEvent: {}
+[79.442428] (-) TimerEvent: {}
+[79.543130] (-) TimerEvent: {}
+[79.643869] (-) TimerEvent: {}
+[79.744648] (-) TimerEvent: {}
+[79.845482] (-) TimerEvent: {}
+[79.947219] (-) TimerEvent: {}
+[79.994022] (teb_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/teb_msgs/msg/detail/feedback_msg__type_support.c.o\x1b[0m\n'}
+[80.047528] (-) TimerEvent: {}
+[80.148490] (-) TimerEvent: {}
+[80.249086] (-) TimerEvent: {}
+[80.280552] (teb_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/teb_msgs/msg/detail/trajectory_point_msg__type_support.c.o\x1b[0m\n'}
+[80.349297] (-) TimerEvent: {}
+[80.450001] (-) TimerEvent: {}
+[80.528291] (teb_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/teb_msgs/msg/detail/trajectory_msg__type_support.c.o\x1b[0m\n'}
+[80.550288] (-) TimerEvent: {}
+[80.651220] (-) TimerEvent: {}
+[80.751911] (-) TimerEvent: {}
+[80.772703] (teb_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library libteb_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[80.852098] (-) TimerEvent: {}
+[80.951212] (teb_msgs) StdoutLine: {'line': b'[ 76%] Built target teb_msgs__rosidl_typesupport_introspection_c\n'}
+[80.952210] (-) TimerEvent: {}
+[81.052986] (-) TimerEvent: {}
+[81.062061] (teb_msgs) StdoutLine: {'line': b'[ 76%] Built target teb_msgs\n'}
+[81.153180] (-) TimerEvent: {}
+[81.178501] (teb_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[81.253329] (-) TimerEvent: {}
+[81.354003] (-) TimerEvent: {}
+[81.454829] (-) TimerEvent: {}
+[81.555637] (-) TimerEvent: {}
+[81.656274] (-) TimerEvent: {}
+[81.757217] (-) TimerEvent: {}
+[81.857851] (-) TimerEvent: {}
+[81.958627] (-) TimerEvent: {}
+[82.059523] (-) TimerEvent: {}
+[82.160172] (-) TimerEvent: {}
+[82.260838] (-) TimerEvent: {}
+[82.361632] (-) TimerEvent: {}
+[82.462445] (-) TimerEvent: {}
+[82.563242] (-) TimerEvent: {}
+[82.664315] (-) TimerEvent: {}
+[82.765010] (-) TimerEvent: {}
+[82.865765] (-) TimerEvent: {}
+[82.966408] (-) TimerEvent: {}
+[83.067097] (-) TimerEvent: {}
+[83.167753] (-) TimerEvent: {}
+[83.268381] (-) TimerEvent: {}
+[83.368967] (-) TimerEvent: {}
+[83.469599] (-) TimerEvent: {}
+[83.570255] (-) TimerEvent: {}
+[83.670883] (-) TimerEvent: {}
+[83.771474] (-) TimerEvent: {}
+[83.872291] (-) TimerEvent: {}
+[83.973208] (-) TimerEvent: {}
+[84.073828] (-) TimerEvent: {}
+[84.174556] (-) TimerEvent: {}
+[84.275781] (-) TimerEvent: {}
+[84.376418] (-) TimerEvent: {}
+[84.477131] (-) TimerEvent: {}
+[84.577844] (-) TimerEvent: {}
+[84.600011] (teb_msgs) StdoutLine: {'line': b'[ 78%] Built target teb_msgs__py\n'}
+[84.678037] (-) TimerEvent: {}
+[84.711677] (teb_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_generator_py.dir/rosidl_generator_py/teb_msgs/msg/_feedback_msg_s.c.o\x1b[0m\n'}
+[84.778186] (-) TimerEvent: {}
+[84.879274] (-) TimerEvent: {}
+[84.979954] (-) TimerEvent: {}
+[85.080638] (-) TimerEvent: {}
+[85.181341] (-) TimerEvent: {}
+[85.282264] (-) TimerEvent: {}
+[85.297277] (teb_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_generator_py.dir/rosidl_generator_py/teb_msgs/msg/_trajectory_point_msg_s.c.o\x1b[0m\n'}
+[85.311671] (teb_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_generator_py.dir/rosidl_generator_py/teb_msgs/msg/_trajectory_msg_s.c.o\x1b[0m\n'}
+[85.382455] (-) TimerEvent: {}
+[85.483297] (-) TimerEvent: {}
+[85.584472] (-) TimerEvent: {}
+[85.685474] (-) TimerEvent: {}
+[85.786431] (-) TimerEvent: {}
+[85.887150] (-) TimerEvent: {}
+[85.988062] (-) TimerEvent: {}
+[86.088962] (-) TimerEvent: {}
+[86.093432] (teb_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/teb_msgs/libteb_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[86.189894] (-) TimerEvent: {}
+[86.290671] (-) TimerEvent: {}
+[86.350144] (teb_msgs) StdoutLine: {'line': b'[ 87%] Built target teb_msgs__rosidl_generator_py\n'}
+[86.390835] (-) TimerEvent: {}
+[86.477124] (teb_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[86.491130] (-) TimerEvent: {}
+[86.514028] (teb_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[86.591338] (-) TimerEvent: {}
+[86.692246] (-) TimerEvent: {}
+[86.792946] (-) TimerEvent: {}
+[86.893672] (-) TimerEvent: {}
+[86.994403] (-) TimerEvent: {}
+[87.095211] (-) TimerEvent: {}
+[87.183218] (teb_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/teb_msgs/teb_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[87.195373] (-) TimerEvent: {}
+[87.263878] (teb_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/teb_msgs/teb_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[87.295669] (-) TimerEvent: {}
+[87.397784] (-) TimerEvent: {}
+[87.499203] (-) TimerEvent: {}
+[87.514709] (teb_msgs) StdoutLine: {'line': b'[ 95%] Built target teb_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[87.599339] (-) TimerEvent: {}
+[87.645594] (teb_msgs) StdoutLine: {'line': b'[ 95%] Built target teb_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[87.672996] (teb_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/teb_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[87.699555] (-) TimerEvent: {}
+[87.801357] (-) TimerEvent: {}
+[87.901981] (-) TimerEvent: {}
+[88.002710] (-) TimerEvent: {}
+[88.103730] (-) TimerEvent: {}
+[88.204606] (-) TimerEvent: {}
+[88.305404] (-) TimerEvent: {}
+[88.330949] (teb_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/teb_msgs/teb_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[88.405637] (-) TimerEvent: {}
+[88.506492] (-) TimerEvent: {}
+[88.607742] (-) TimerEvent: {}
+[88.643852] (teb_msgs) StdoutLine: {'line': b'[100%] Built target teb_msgs__rosidl_typesupport_c__pyext\n'}
+[88.710480] (teb_msgs) CommandEnded: {'returncode': 0}
+[88.713140] (-) TimerEvent: {}
+[88.813874] (-) TimerEvent: {}
+[88.914763] (-) TimerEvent: {}
+[89.015426] (-) TimerEvent: {}
+[89.116654] (-) TimerEvent: {}
+[89.217708] (-) TimerEvent: {}
+[89.318485] (-) TimerEvent: {}
+[89.419103] (-) TimerEvent: {}
+[89.472119] (teb_msgs) JobProgress: {'identifier': 'teb_msgs', 'progress': 'install'}
+[89.472428] (teb_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/amr_ws/src/build/teb_msgs'], 'cwd': '/home/pi/amr_ws/src/build/teb_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.68.12 54096 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs/lib:/home/pi/amr_ws/install/witmotion_ros/lib:/home/pi/amr_ws/install/micro_ros_agent/lib:/home/pi/amr_ws/install/micro_ros_msgs/lib:/home/pi/amr_ws/install/foxglove_bridge/lib:/home/pi/amr_ws/install/amr_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/usr/share/gurumdds/cmake/../../../lib:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/amr_ws/src/teb_local_planner'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('ROS_LOG_DIR', '/home/pi/nulldir'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/amr_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs:/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_control:/home/pi/amr_ws/install/amr_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/pi/amr_ws/src/build/teb_msgs'), ('SSH_CONNECTION', '192.168.68.12 54096 192.168.68.24 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/pi/amr_ws/install/amr_control/lib/python3.10/site-packages:/home/pi/amr_ws/install/amr_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/amr_ws/src/install/costmap_converter_msgs:/home/pi/amr_ws/install/witmotion_ros:/home/pi/amr_ws/install/sllidar_ros2:/home/pi/amr_ws/install/rplidar_ros2:/home/pi/amr_ws/install/micro_ros_setup:/home/pi/amr_ws/install/micro_ros_agent:/home/pi/amr_ws/install/micro_ros_msgs:/home/pi/amr_ws/install/ldlidar:/home/pi/amr_ws/install/foxglove_bridge:/home/pi/amr_ws/install/amr_interface:/home/pi/amr_ws/install/amr_control:/opt/ros/humble')]), 'shell': False}
+[89.513707] (teb_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[89.514579] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/ament_index/resource_index/rosidl_interfaces/teb_msgs\n'}
+[89.515885] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs\n'}
+[89.516591] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg\n'}
+[89.517179] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_point_msg.h\n'}
+[89.518232] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_msg.h\n'}
+[89.519281] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[89.519903] (-) TimerEvent: {}
+[89.520369] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/feedback_msg.h\n'}
+[89.521522] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail\n'}
+[89.522725] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__type_support.h\n'}
+[89.523999] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__type_support.h\n'}
+[89.524920] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__struct.h\n'}
+[89.526056] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__functions.h\n'}
+[89.527336] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__type_support.h\n'}
+[89.528486] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__functions.c\n'}
+[89.529724] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__struct.h\n'}
+[89.530818] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__functions.h\n'}
+[89.532030] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__functions.c\n'}
+[89.533176] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__functions.h\n'}
+[89.534472] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__struct.h\n'}
+[89.535643] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__functions.c\n'}
+[89.537502] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/library_path.sh\n'}
+[89.538795] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/library_path.dsv\n'}
+[89.540469] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_generator_c.so\n'}
+[89.543468] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_generator_c.so" to ""\n'}
+[89.544233] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs\n'}
+[89.544680] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg\n'}
+[89.545336] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[89.546122] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail\n'}
+[89.547189] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[89.548106] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[89.549140] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[89.550559] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[89.553451] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[89.554227] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs\n'}
+[89.555041] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg\n'}
+[89.555444] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/feedback_msg.hpp\n'}
+[89.556049] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_point_msg.hpp\n'}
+[89.557312] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail\n'}
+[89.558587] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__traits.hpp\n'}
+[89.561704] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__builder.hpp\n'}
+[89.565937] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__traits.hpp\n'}
+[89.567798] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__struct.hpp\n'}
+[89.569154] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__builder.hpp\n'}
+[89.573149] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__struct.hpp\n'}
+[89.575697] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__traits.hpp\n'}
+[89.576430] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__struct.hpp\n'}
+[89.576887] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__builder.hpp\n'}
+[89.577620] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/trajectory_msg.hpp\n'}
+[89.578135] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs\n'}
+[89.578570] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg\n'}
+[89.578964] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[89.579363] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail\n'}
+[89.579816] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[89.580264] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[89.580634] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/dds_fastrtps\n'}
+[89.581524] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[89.582403] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[89.582846] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[89.583527] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs\n'}
+[89.584232] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg\n'}
+[89.584949] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[89.585653] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail\n'}
+[89.586131] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_introspection_c.h\n'}
+[89.586782] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_introspection_c.h\n'}
+[89.587342] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__type_support.c\n'}
+[89.588586] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_introspection_c.h\n'}
+[89.589828] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__type_support.c\n'}
+[89.591101] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__type_support.c\n'}
+[89.592695] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_introspection_c.so\n'}
+[89.595333] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[89.596512] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_c.so\n'}
+[89.598497] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_c.so" to ""\n'}
+[89.599031] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs\n'}
+[89.599591] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg\n'}
+[89.599966] (teb_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail\n'}
+[89.600396] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[89.601325] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_point_msg__type_support.cpp\n'}
+[89.602557] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[89.604003] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/feedback_msg__type_support.cpp\n'}
+[89.605334] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__type_support.cpp\n'}
+[89.606683] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/include/teb_msgs/teb_msgs/msg/detail/trajectory_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[89.608212] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[89.612205] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[89.613252] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_cpp.so\n'}
+[89.615196] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[89.616337] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/pythonpath.sh\n'}
+[89.617355] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/pythonpath.dsv\n'}
+[89.618294] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs-0.0.1-py3.10.egg-info\n'}
+[89.619456] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[89.620066] (-) TimerEvent: {}
+[89.620655] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[89.622207] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[89.623417] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[89.625420] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs\n'}
+[89.626505] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[89.627443] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg\n'}
+[89.628327] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_feedback_msg_s.c\n'}
+[89.629173] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_feedback_msg.py\n'}
+[89.630516] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/__init__.py\n'}
+[89.631537] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_trajectory_point_msg_s.c\n'}
+[89.632741] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_trajectory_msg_s.c\n'}
+[89.633968] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_trajectory_msg.py\n'}
+[89.635161] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_trajectory_point_msg.py\n'}
+[89.636588] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[89.637958] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/libteb_msgs__rosidl_generator_py.so\n'}
+[89.639375] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[89.640917] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[89.643253] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/__init__.py\n'}
+[89.644125] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/_teb_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[89.644726] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[89.720322] (-) TimerEvent: {}
+[89.821043] (-) TimerEvent: {}
+[89.864687] (teb_msgs) StdoutLine: {'line': b"Listing '/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs'...\n"}
+[89.866363] (teb_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/__init__.py'...\n"}
+[89.867996] (teb_msgs) StdoutLine: {'line': b"Listing '/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg'...\n"}
+[89.869430] (teb_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/__init__.py'...\n"}
+[89.870899] (teb_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_feedback_msg.py'...\n"}
+[89.876043] (teb_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_trajectory_msg.py'...\n"}
+[89.877600] (teb_msgs) StdoutLine: {'line': b"Compiling '/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/msg/_trajectory_point_msg.py'...\n"}
+[89.907022] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[89.911185] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[89.913030] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[89.917003] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[89.919652] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[89.921600] (-) TimerEvent: {}
+[89.925500] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/local/lib/python3.10/dist-packages/teb_msgs/teb_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[89.926656] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_generator_py.so\n'}
+[89.929452] (teb_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/amr_ws/src/install/teb_msgs/lib/libteb_msgs__rosidl_generator_py.so" to ""\n'}
+[89.931233] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/msg/FeedbackMsg.idl\n'}
+[89.932757] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/msg/TrajectoryMsg.idl\n'}
+[89.934542] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/msg/TrajectoryPointMsg.idl\n'}
+[89.936409] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/msg/FeedbackMsg.msg\n'}
+[89.938237] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/msg/TrajectoryMsg.msg\n'}
+[89.940351] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/msg/TrajectoryPointMsg.msg\n'}
+[89.942368] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/ament_index/resource_index/package_run_dependencies/teb_msgs\n'}
+[89.945351] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/ament_index/resource_index/parent_prefix_path/teb_msgs\n'}
+[89.947394] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/ament_prefix_path.sh\n'}
+[89.949467] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/ament_prefix_path.dsv\n'}
+[89.951096] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/path.sh\n'}
+[89.952888] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/environment/path.dsv\n'}
+[89.954105] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/local_setup.bash\n'}
+[89.955715] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/local_setup.sh\n'}
+[89.957727] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/local_setup.zsh\n'}
+[89.959235] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/local_setup.dsv\n'}
+[89.960781] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/package.dsv\n'}
+[89.964221] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/ament_index/resource_index/packages/teb_msgs\n'}
+[89.966148] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_cExport.cmake\n'}
+[89.968137] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[89.969877] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[89.971778] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[89.974331] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_cppExport.cmake\n'}
+[89.975893] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[89.977792] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[89.980015] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[89.981619] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[89.983592] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cExport.cmake\n'}
+[89.985323] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[89.987193] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[89.989488] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[89.991567] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[89.993187] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[89.995180] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_pyExport.cmake\n'}
+[89.997730] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/export_teb_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[89.998757] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[90.000325] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[90.002549] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[90.004922] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[90.006014] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[90.007961] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[90.009554] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[90.011271] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgsConfig.cmake\n'}
+[90.012794] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/cmake/teb_msgsConfig-version.cmake\n'}
+[90.014295] (teb_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/amr_ws/src/install/teb_msgs/share/teb_msgs/package.xml\n'}
+[90.022134] (-) TimerEvent: {}
+[90.025346] (teb_msgs) CommandEnded: {'returncode': 0}
+[90.122492] (-) TimerEvent: {}
+[90.223786] (-) TimerEvent: {}
+[90.324544] (-) TimerEvent: {}
+[90.425380] (-) TimerEvent: {}
+[90.526178] (-) TimerEvent: {}
+[90.626927] (-) TimerEvent: {}
+[90.728197] (-) TimerEvent: {}
+[90.828935] (-) TimerEvent: {}
+[90.929558] (-) TimerEvent: {}
+[91.030196] (-) TimerEvent: {}
+[91.065811] (teb_msgs) JobEnded: {'identifier': 'teb_msgs', 'rc': 0}
+[91.080285] (teb_local_planner) JobStarted: {'identifier': 'teb_local_planner'}
+[91.131792] (-) TimerEvent: {}
+[91.145521] (teb_local_planner) JobEnded: {'identifier': 'teb_local_planner', 'rc': 1}
+[91.158500] (-) EventReactorShutdown: {}

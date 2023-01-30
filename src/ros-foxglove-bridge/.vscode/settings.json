@@ -1,0 +1,15 @@
+// -*- jsonc -*-
+{
+  "C_Cpp.autoAddFileAssociations": false,
+  "editor.defaultFormatter": "xaver.clang-format",
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "search.exclude": {
+    "build/": true,
+    "install/": true,
+    "log/": true
+  }
+}
