@@ -1,2 +1,0 @@
-Invoking command in '/home/pi/amr_ws/src/build/teb_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/amr_ws/install/amr_control:/opt/ros/humble /usr/bin/cmake /home/pi/amr_ws/src/teb_local_planner/teb_msgs -DCMAKE_INSTALL_PREFIX=/home/pi/amr_ws/src/install/teb_msgs
-Invoked command in '/home/pi/amr_ws/src/build/teb_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/amr_ws/install/amr_control:/opt/ros/humble /usr/bin/cmake /home/pi/amr_ws/src/teb_local_planner/teb_msgs -DCMAKE_INSTALL_PREFIX=/home/pi/amr_ws/src/install/teb_msgs
