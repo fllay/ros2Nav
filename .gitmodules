@@ -1,0 +1,3 @@
+[submodule "ros2witmotion_arduino_openrb150"]
+	path = ros2witmotion_arduino_openrb150
+	url = https://github.com/fllay/ros2witmotionFirmwareArduino.git
